@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-func add(a int, b int) int {
-	return a + b
+func multiply(a int, b int, c int) int {
+	return a * b * c
 }
 
 func main() {
-	result := add(5, 7)
+	result := multiply(2, 3, 4)
 	fmt.Println("Сумма: ", result)
 }
