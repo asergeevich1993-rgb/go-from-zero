@@ -16,11 +16,11 @@ func main() {
 
 		stock, exists := toystore[toy]
 
-		if exists && toystore[toy] >= count {
+		if exists && stock >= count {
 			toystore[toy] = stock - count
 			fmt.Print("продано: ", count, " Осталось: ", toystore[toy])
 
-		} else if exists && toystore[toy] < count {
+		} else if exists && stock < count {
 			fmt.Print("Недостаточно! На складе: ", stock)
 
 		} else {
