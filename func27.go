@@ -8,9 +8,9 @@ func countDups(words []string) map[string]int {
 	for _, value := range words {
 		counter[value]++
 	}
-	for key, value := range counter {
+	/*for key, value := range counter {
 		counter[key] = value
-	}
+	}*/
 	return counter
 
 }
