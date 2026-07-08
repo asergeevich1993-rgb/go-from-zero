@@ -31,11 +31,11 @@ func main() {
 			fmt.Print("нет в списке голосующих\n")
 		}
 	}
-	for film, votes := range counter {
-		fmt.Println(film, ":", votes)
+	for films, votes := range counter {
+		fmt.Println(films, ":", votes)
 		if votes > maXcount {
 			maXcount = votes
-			winner = film
+			winner = films
 		}
 	}
 	fmt.Println(winner, " набрал ", maXcount, " голосов")

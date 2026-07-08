@@ -4,9 +4,15 @@ import "fmt"
 
 func minPrice(m map[string]int) (string, int) {
 	var cheapest string
-	minprice := 9999
-
+	var minprice int
+	first := true
 	for key, value := range m {
+		if first {
+			minprice = value
+			key = cheapest
+			first = false
+		}
+
 		if value < minprice {
 			minprice = value
 			cheapest = key

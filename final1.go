@@ -37,6 +37,8 @@ func main() {
 
 	for _, r := range result {
 		show(r)
+		fmt.Println("")
+		fmt.Println(r.Describe())
 	}
 
 }
