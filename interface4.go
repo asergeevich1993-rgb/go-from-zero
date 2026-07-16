@@ -53,4 +53,5 @@ func main() {
 
 	b.Deposit(12000)
 	printBalance(&b)
+	b.Deposit(-15000)
 }

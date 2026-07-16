@@ -42,6 +42,6 @@ func main() {
 		fmt.Println(name, ":", vote)
 
 	}
-	fmt.Println("Победил: ", winner, "(", maxVotes, " голосов")
+	fmt.Println("Победил: ", winner, maxVotes, " голосов")
 
 }

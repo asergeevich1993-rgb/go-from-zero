@@ -37,5 +37,6 @@ func main() {
 	shape := []Shape{Rectangle{Width: 5, Height: 3}, Circle{Radius: 5}}
 	for _, s := range shape {
 		fmt.Println(s.Name(), s.Area())
+
 	}
 }

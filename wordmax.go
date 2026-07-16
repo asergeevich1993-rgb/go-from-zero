@@ -12,7 +12,7 @@ func main() {
 	countproducts := strings.Split(text, " ")
 	maxcount := 0
 	for _, v := range countproducts {
-		products[v] = products[v] + 1
+		products[v]++
 	}
 	for countproducts, count := range products {
 		fmt.Println(countproducts, ":", count)
